@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ post.title }}</h1>
+<p><strong>By:</strong> {{ post.author }}</p>
+<p><strong>Posted on:</strong> {{ post.timestamp|date:"Y-m-d H:i" }}</p>
+<p>{{ post.content }}</p>
+
+{% if user == post.author %}
+    <a href="{% url 'blog_edit' post.id %}">Edit</a> |
+    <form method="post" action="{% url 'blog_delete' post.id %}" style="display:inline;">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+{% endif %}
+{% endblock %}

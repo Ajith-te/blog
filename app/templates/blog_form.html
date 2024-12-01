@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title|default:"New Post" }}{% endblock %}
+
+{% block content %}
+<h1>{{ post.title|default:"Create New Post" }}</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" value="{{ post.title|default:'' }}" required><br><br>
+
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content" rows="10" required>{{ post.content|default:'' }}</textarea><br><br>
+
+    <button type="submit">Save</button>
+</form>
+{% endblock %}
