@@ -112,14 +112,14 @@ The application will be accessible at `http://127.0.0.1:8000/`.
 
 ## Folder Structure
 
-- `simple_blog/`: The main project directory.
-  - `blog/`: The app for managing blog posts.
+- `blog/`: The main project directory.
+  - `app/`: The app for managing blog posts.
     - `migrations/`: Database migrations.
     - `models.py`: Defines the database models.
     - `views.py`: Handles the logic for displaying blog posts.
     - `templates/`: Contains HTML files for the frontend.
-  - `simple_blog/settings.py`: Main Django project settings.
-  - `simple_blog/urls.py`: URL routing for the project.
+  - `isolve_task/settings.py`: Main Django project settings.
+  - `isolve_task/urls.py`: URL routing for the project.
   - `manage.py`: Django's command-line utility for managing the project.
 
 ## Technologies Used
