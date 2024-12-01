@@ -32,13 +32,13 @@ Follow these steps to set up the project on your local machine:
 Clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/yourusername/simple-blogging-platform.git
+git clone https://github.com/Ajith-te/blog.git
 ```
 
 ### 2. Navigate to the project directory
 
 ```bash
-cd simple-blogging-platform
+cd blog
 ```
 
 ### 3. Set up a virtual environment
